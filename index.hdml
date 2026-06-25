@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Market</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: white;
+  margin-top: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>My Marketplace</h1>
+  <p>Buy digital products</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Starter Pack</h2>
+    <p>Basic website template</p>
+    <div class="price">$5</div>
+    <button onclick="buy('Starter Pack')">Buy</button>
+  </div>
+
+  <div class="card">
+    <h2>Pro Pack</h2>
+    <p>Advanced website design</p>
+    <div class="price">$10</div>
+    <button onclick="buy('Pro Pack')">Buy</button>
+  </div>
+
+  <div class="card">
+    <h2>Elite Pack</h2>
+    <p>Full premium system</p>
+    <div class="price">$20</div>
+    <button onclick="buy('Elite Pack')">Buy</button>
+  </div>
+
+</div>
+
+<footer>
+  My Market © 2026
+</footer>
+
+<script>
+function buy(item) {
+  alert("You selected: " + item + "\\nNext step: connect payment system");
+}
+</script>
+
+</body>
+</html>
